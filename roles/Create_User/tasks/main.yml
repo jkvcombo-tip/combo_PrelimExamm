@@ -1,2 +1,7 @@
 ---
 # tasks file for Create_User
+
+
+- name: Create user
+  user:
+    name: "{{ myname }}"

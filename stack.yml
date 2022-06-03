@@ -1,0 +1,16 @@
+---
+
+- name: Prelim Exam
+  hosts: ubuntu
+ 
+  vars:
+    username: "qjkvcombo-tip"
+    myname: "combo_ken"
+
+- hosts: all
+  become: yes
+  roles: 
+       - Python
+       - Java
+       - Create_User
+       - Change_Motd
